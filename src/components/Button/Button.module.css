@@ -16,15 +16,20 @@
     border-radius: 10px;
 }
 
+/* .active {
+    background-color: var(--focus);
+    color: var(--green);
+} */
+
 .button:hover {
     background-color: var(--hover);
     color: var(--green);
 }
 
-.button:focus {
+/* .button:focus {
     background-color: var(--focus);
     color: var(--green);
-}
+} */
 
 .wrapper input {
     width: 126px;

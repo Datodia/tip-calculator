@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.title p {
+    font-size: 13px;
+    color: var(--grey);
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--focus);
+}
