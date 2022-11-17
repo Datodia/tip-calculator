@@ -1,0 +1,16 @@
+.button {
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Space Mono';
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--hover);
+    color: var(--black);
+}
