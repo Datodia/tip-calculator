@@ -6,40 +6,18 @@
 
 .main-div {
   width: 355px;
-  height: 600px;
+  height: 830px;
   margin: auto;
   background-color: var(--white);
   border-radius: 40px;
   padding: 32px;
 }
 
-.container .main-div .calc .bill h1,
-.container .main-div .calc .tip h1 {
-  font-size: 16px;
-  color: var(--grey);
-  margin-bottom: 10px;
-}
-
-
-
-.container .main-div .calc .input {
-  width: 311px;
-  height: 48px;
-  background-color: #F3F9FA;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-
-.container .main-div .calc .input input {
-  height: 100%;
-  width: 100%;
-  font-family: 'Space Mono';
-  font-size: 24px;
-  color: var(--green);
-  text-align: end;
-  border: none;
-  background: none;
+.result {
+  margin-top: 32px;
+  border-radius: 15px;
+  width: 291px;
+  height: 257px;
+  background-color: var(--green);
+  padding: 30px 24px 24px 24px;
 }
