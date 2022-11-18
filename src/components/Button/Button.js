@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Button.module.css'
 
-export const Button = ({ setPercent }) => {
+export const Button = ({ setPercent, active, setActive }) => {
+
 
     const handleClick = (e) => {
         setPercent(e.value)
+        setActive(e.id)
     }
 
     const handleChange = (e) => {
@@ -34,12 +36,17 @@ export const Button = ({ setPercent }) => {
         }
     ]
 
+
+
     return (
         <>
             <h1 className={styles.title}>Select Tip %</h1>
             <div className={styles.wrapper} >
                 {buttons.map((elem) => {
-                    return <button className={styles.button} onClick={() => handleClick(elem)}>{elem.value}%</button>
+                    return <button style={{ backgroundColor: active === elem.id ? "var(--focus)" : null }} className={styles.button}
+                        onClick={() =>
+                            handleClick(elem)
+                        }>{elem.value}%</button>
                 })}
                 <input type='number' placeholder='Custom' onChange={handleChange} />
             </div>

@@ -21,3 +21,22 @@
   background-color: var(--green);
   padding: 30px 24px 24px 24px;
 }
+
+@media screen and (min-width: 940px) {
+  .main-div {
+    display: flex;
+    width: 920px;
+    height: 500px;
+    gap: 80px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .calculator {
+    width: 500px;
+  }
+
+  .result {
+    width: 450px;
+    height: 400px;
+  }
+}

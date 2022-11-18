@@ -13,6 +13,7 @@ function App() {
   const [percent, setPercent] = useState(0)
   const [amount, setAmount] = useState(0.00)
   const [result, setResult] = useState(0)
+  const [active, setActive] = useState(0)
 
   const billChange = (e) => {
     setBill(Number(e.target.value))
@@ -26,16 +27,16 @@ function App() {
     <div className="container">
       <div className='title'><img src='assets/logo.svg' /></div>
       <div className='main-div'>
-        <div>
+        <div className='calculator'>
           <Input name={'Bill'} img={'assets/dollar.svg'} handleChange={billChange} value={bill} />
-          <Button setPercent={setPercent} />
+          <Button setPercent={setPercent} active={active} setActive={setActive} />
           <Input name={'Number of People'} img={'assets/person.svg'} handleChange={personChange} error="Can't be zero" person={person} value={person} />
           <Submit bill={bill} person={person} setResult={setResult} percent={percent} setPerson={setPerson} setAmount={setAmount} />
         </div>
         <div className='result' >
           <Person amount={amount} />
           <Total result={result} />
-          <Reset setAmount={setAmount} setResult={setResult} setBill={setBill} setPerson={setPerson} setPercent={setPercent} />
+          <Reset setAmount={setAmount} setResult={setResult} setBill={setBill} setPerson={setPerson} setPercent={setPercent} setActive={setActive} />
         </div>
       </div>
     </div>

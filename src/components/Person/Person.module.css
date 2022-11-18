@@ -18,3 +18,23 @@ h1 {
     font-size: 32px;
     color: var(--focus);
 }
+
+@media screen and (min-width: 940px) {
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title p {
+        font-size: 14px;
+        color: var(--grey);
+    }
+
+    h1 {
+        font-size: 34px;
+        color: var(--focus);
+    }
+}
