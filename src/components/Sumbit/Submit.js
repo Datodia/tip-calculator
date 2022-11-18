@@ -6,10 +6,10 @@ export const Submit = ({ bill, person, setResult, percent, setPerson, setAmount 
     let tip = (((bill * percent) / 100) / person)
 
     const handleClick = () => {
-        if (person == null) {
+        if (person === "" || person === "0") {
             setPerson(0)
         }
-        if (person !== null && person !== 0 && person !== "") {
+        if (person !== null && person !== 0 && person !== "" && person !== "0") {
             setAmount(Number.parseFloat(tip).toFixed(2))
             setResult(Number.parseFloat(((bill / person) + tip)).toFixed(2))
         }

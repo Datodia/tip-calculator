@@ -6,7 +6,7 @@ export const Input = ({ name, img, handleChange, error, person, value }) => {
         <div>
             <div className={styles.titleDiv}>
                 <h1 className={styles.title}>{name}</h1>
-                {person == 0 ? <h1 className={styles.error}>{error}</h1> : null}
+                {person === 0 ? <h1 className={styles.error}>{error}</h1> : null}
             </div>
 
             <div className={styles.wrapper}>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
 import styles from './Button.module.css'
 
-export const Button = ({ setPercent, active, setActive }) => {
+export const Button = ({ setPercent, active, setActive, percent }) => {
 
 
     const handleClick = (e) => {
@@ -10,7 +9,9 @@ export const Button = ({ setPercent, active, setActive }) => {
     }
 
     const handleChange = (e) => {
-        setPercent(Number(e.target.value))
+        const val = Math.max(0, Math.min(900, Number(e.target.value)));
+        setPercent(val.toString());
+        // setPercent(Number(e.target.value))
     }
 
     const buttons = [
@@ -48,7 +49,7 @@ export const Button = ({ setPercent, active, setActive }) => {
                             handleClick(elem)
                         }>{elem.value}%</button>
                 })}
-                <input type='number' placeholder='Custom' onFocus={() => setActive(0)} onChange={handleChange} />
+                <input type='number' value={percent} placeholder='Custom' onFocus={() => setActive(0)} onChange={handleChange} />
             </div>
         </>
     )

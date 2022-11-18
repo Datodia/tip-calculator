@@ -8,7 +8,7 @@ export const Reset = ({ setAmount, setResult, setBill, setPerson, setPercent, se
         setResult(0.00)
         setBill("")
         setPerson("")
-        setPercent(0)
+        setPercent("")
         setActive(0)
     }
 
