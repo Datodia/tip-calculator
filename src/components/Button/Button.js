@@ -48,7 +48,7 @@ export const Button = ({ setPercent, active, setActive }) => {
                             handleClick(elem)
                         }>{elem.value}%</button>
                 })}
-                <input type='number' placeholder='Custom' onChange={handleChange} />
+                <input type='number' placeholder='Custom' onFocus={() => setActive(0)} onChange={handleChange} />
             </div>
         </>
     )
