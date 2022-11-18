@@ -19,7 +19,7 @@ export const Submit = ({ bill, person, setResult, percent, setPerson, setAmount 
 
     return (
         <div>
-            <button className={styles.button} onClick={handleClick}>Sumbit</button>
+            <button className={styles.button} onClick={handleClick}>Calculate</button>
         </div>
     )
 }

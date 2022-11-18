@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Reset.module.css'
 
-export const Reset = ({ setAmount, setResult, setBill, setPerson, setPercent }) => {
+export const Reset = ({ setAmount, setResult, setBill, setPerson, setPercent, setActive }) => {
 
     const handleClick = () => {
         setAmount(0.00)
@@ -9,6 +9,7 @@ export const Reset = ({ setAmount, setResult, setBill, setPerson, setPercent }) 
         setBill("")
         setPerson("")
         setPercent(0)
+        setActive(0)
     }
 
     return (
